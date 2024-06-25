@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+
+
+<body>
+<h1>Calculadora Simples</h1>
+<script>
+
+var calculo;
+var operação = prompt ("Escolha a operação:\n1-Soma\n2-Subt\n3-Mult\n4-Div");
+var numero1 = prompt ("Digite primeiro valor: ");
+var numero2 = prompt ("Digite segundo valor: ");
+
+calculo = parseInt (operação);
+valor1 = parseFloat(numero1);
+valor2 = parseFloat(numero2);
+
+var resultado;
+if (operação == 1)
+    {
+        resultado = valor1 + valor2;
+    }
+else if (operação == 2)
+    {
+        resultado = valor1 - valor2;
+    }   
+else if (operação == 3)
+    {
+        resultado = valor1 * valor2;
+    }
+else if (operação == 4)
+    {
+        resultado = valor1 / valor2;
+    }
+
+alert ("O resultado da operação eh: " + resultado);
+
+</script>
+</body>
+</html>
